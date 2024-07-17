@@ -1,0 +1,25 @@
+#game-board {
+    border-collapse: collapse;
+}
+
+#game-board td {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#game-board td:hover {
+    background-color: #f0f0f0;
+}
+
+#new-game {
+    margin-top: 20px;
+}
+
+#game-status {
+    font-size: 18px;
+    color: #666;
+}
