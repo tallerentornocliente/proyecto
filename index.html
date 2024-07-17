@@ -1,0 +1,150 @@
+<?php
+session_start();
+if(!isset($_SESSION['registro'])){
+    header("location:login.php");
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Contacto</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+       .container {
+            margin-top: 50px;
+        }
+       .game-box {
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       .game-box img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px 10px 0 0;
+        }
+       .game-box h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+       .game-box button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+       .game-box button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+       .social-links {
+            margin-top: 20px;
+        }
+       .social-links a {
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mis Contactos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario_agenda.php">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cerrar.php">Cerrar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Bienvenidos administrador</h1>
+        <div class="game-box">
+            <img src="img/pexels-pixabay-220055.jpg" alt="Game 1">
+            <h2>Juego 1</h2>
+            <button><a href="tres_en_raya_con_novia/index.html" target="_blank">Ir al juego</a></button>
+        </div>
+        <div class="game-box">
+            <img src="img/pexels-pixabay-220051.jpg" alt="Game 2">
+            <h2>Juego 2</h2>
+            <button><a href="tres_en_raya_soltero/index.html" target="_blank">Ir al juego</a></button>
+        </div>
+        <div class="game-box">
+            <img src="img/serpiente.jpg" alt="Game 3">
+            <h2>Juego 3</h2>
+            <button><a href="serpiente/index.html" target="_blank">Ir al juego</a></button>
+        </div>
+        <div class="game-box">
+            <img src="img/pexels-pixabay-356079.jpg" alt="Game 4">
+            <h2>Juego 4</h2>
+            <button><a href="adivinar_numero/index.html" target="_blank">Ir al juego</a></button>
+        </div>
+        <div class="game-box">
+            <img src="img/pexels-yogendras31-1701197.jpg" alt="Game 5">
+            <h2>Juego 4</h2>
+            <button><a href="nunca_perder/index.html" target="_blank">Ir al juego</a></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mis Contactos. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>Correo electrónico: <a href="mailto:info@miscontactos.com">info@miscontactos.com</a></p>
+            <p>Teléfono: 555-555-5555</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
